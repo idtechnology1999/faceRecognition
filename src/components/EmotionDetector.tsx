@@ -29,8 +29,6 @@ const EmotionDetector: React.FC<EmotionDetectorProps> = ({ userName }) => {
   const streamRef = useRef<MediaStream | null>(null);
   const isStartingRef = useRef<boolean>(false);
 
-  const CONFIDENCE_THRESHOLD = 0.5;
-
   useEffect(() => {
     console.log('🚀 EMOSCAN Component mounted');
     loadModels();

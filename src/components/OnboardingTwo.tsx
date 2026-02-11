@@ -14,7 +14,7 @@ const OnboardingTwo: React.FC<OnboardingTwoProps> = ({ onSubmit }) => {
 
   useEffect(() => {
     setTimeout(() => setAnimate(true), 100);
-    
+    console.log(typing)
     // Typewriter effect
     let index = 0;
     const timer = setInterval(() => {
